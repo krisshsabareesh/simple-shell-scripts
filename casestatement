@@ -1,0 +1,11 @@
+case $1 in 
+  1)
+  echo fine
+  ;;
+  else)
+  echo bye
+  ;;
+  3)
+  echo ok
+  ;;
+esac

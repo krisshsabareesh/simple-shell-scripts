@@ -1,0 +1,22 @@
+if `test $2`
+then
+  echo hello
+else
+  echo 'Usage: [filename][2no.s as arguements]'
+  exit
+fi
+
+
+
+for token in $*
+do
+  echo $token
+done
+
+i=$1
+
+while `test $i -le $2`
+do
+  echo $i
+  i=`expr $i + 1`
+done

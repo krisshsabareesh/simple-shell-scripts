@@ -1,0 +1,7 @@
+ls | while read line; do echo $line ; done | tr [:upper:] [:lower:]
+
+for file in *
+do 
+new=`echo $file | tr [:upper:] [:lower:]`
+mv "$file" "$new"
+done
